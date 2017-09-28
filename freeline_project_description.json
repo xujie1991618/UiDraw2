@@ -1,0 +1,119 @@
+{
+    "android_gradle_plugin_version": "2.3.3",
+    "apk_path": "D:\\xujie\\gitProject\\UiDraw2\\app\\build\\outputs\\apk\\app-debug.apk",
+    "apt": {
+        
+    },
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": false
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "D:\\xujie\\gitProject\\UiDraw2\\app\\build\\freeline",
+    "build_directory": "D:\\xujie\\gitProject\\UiDraw2\\app\\build",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "D:\\Android\\sdk\\build-tools\\25.0.3",
+    "build_tools_version": "25.0.3",
+    "check_sources_md5": [
+        
+    ],
+    "compile_sdk_directory": "D:\\Android\\sdk\\platforms\\android-25",
+    "compile_sdk_version": "android-25",
+    "databinding": [
+        
+    ],
+    "databinding_compiler_jar": "",
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.crayfish.uidraw2",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "D:\\xujie\\gitProject\\UiDraw2",
+    "freeline_gradle_plugin_version": "0.8.7",
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "java_home": "C:\\Program Files\\Java\\jdk1.8.0_77",
+    "launcher": "com.crayfish.uidraw2.MainActivity",
+    "main_assets_directory": [
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\assets",
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\assets"
+    ],
+    "main_jniLibs_directory": [
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\jniLibs",
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\jniLibs"
+    ],
+    "main_jni_directory": [
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\jni",
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\jni"
+    ],
+    "main_manifest_path": "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\AndroidManifest.xml",
+    "main_project_dir": "app",
+    "main_project_name": "app",
+    "main_r_path": "D:\\xujie\\gitProject\\UiDraw2\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "main_res_directory": [
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\res",
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\res"
+    ],
+    "main_src_directory": [
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\java",
+        "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\java"
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "D:\\xujie\\gitProject\\UiDraw2\\app"
+        }
+    ],
+    "package": "com.crayfish.uidraw2",
+    "product_flavor": "",
+    "project_source_sets": {
+        "app": {
+            "main_assets_directory": [
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\assets",
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\jniLibs",
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\jni",
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\res",
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\debug\\java",
+                "D:\\xujie\\gitProject\\UiDraw2\\app\\src\\main\\java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        
+    },
+    "root_dir": "D:\\xujie\\gitProject\\UiDraw2",
+    "sdk_directory": "D:\\Android\\sdk",
+    "use_jdk8": true,
+    "use_system_gradle": false
+}
