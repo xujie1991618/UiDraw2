@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.crayfish.uidraw2.OOView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.crayfish.uidraw2.MainActivity"
-    android:background="@color/colorAccent">
+    tools:context="com.crayfish.uidraw2.MainActivity">
+    <com.crayfish.uidraw2.FlipBoard
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
     <!--<com.crayfish.uidraw2.OOView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent">-->
@@ -13,13 +15,19 @@
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="300dp"-->
         <!--android:background="@color/colorAccent">-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="100*100"
-            android:background="@color/colorPrimary"/>
+        <!--<com.crayfish.uidraw2.LeafLoadingView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"/>-->
+        <!--<com.crayfish.uidraw2.taiji-->
+            <!--android:id="@+id/taiji"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</com.crayfish.uidraw2.taiji>-->
     <!--</LinearLayout>-->
 
     <!--</com.crayfish.uidraw2.OOView>-->
 
-</com.crayfish.uidraw2.OOView>
+</LinearLayout>
