@@ -1,6 +1,7 @@
 package com.crayfish.uidraw2;
 
 import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -91,6 +92,7 @@ public class FlipBoard extends View{
         animator3 = ObjectAnimator.ofInt(this,"degressY",0,45);
         animator3.setDuration(1000);
         animatorSet.playSequentially(animator1,animator2,animator3);
+
     }
 
     @Override
@@ -145,24 +147,25 @@ public class FlipBoard extends View{
 //        canvas.drawBitmap(bitmap, x, y, paint);
 //        canvas.restore();
 
-//        canvas.save();
-//        matrix.reset();
-//        camera.save();
-//        camera.rotateZ(degressZ);
-//        camera.rotateY(degress);
-//        camera.getMatrix(matrix);
-//        camera.restore();
-//        matrix.preTranslate(-mWidth/2,-mHeight/2);
-//        matrix.postTranslate(mWidth/2,mHeight/2);
-//        canvas.concat(matrix);
-//        canvas.clipRect(mWidth/2,0,mWidth,mHeight);
-//        canvas.rotate(degressZ,mWidth/2,mHeight/2);
-//        canvas.drawBitmap(bitmap,x,y,paint);
-//        canvas.restore();
+        canvas.save();
+        matrix.reset();
+        camera.save();
+        camera.rotateZ(degressZ);
+        camera.rotateY(degress);
+        camera.getMatrix(matrix);
+        camera.restore();
+        matrix.preTranslate(-mWidth/2,-mHeight/2);
+        matrix.postTranslate(mWidth/2,mHeight/2);
+        canvas.concat(matrix);
+        canvas.clipRect(mWidth/2,0,mWidth,mHeight);
+        canvas.rotate(degressZ,mWidth/2,mHeight/2);
+        canvas.drawBitmap(bitmap,x,y,paint);
+        canvas.restore();
 
         canvas.save();
         matrix.reset();
         camera.save();
+        camera.rotateX(-degressY);
         camera.rotateZ(degressZ);
         camera.getMatrix(matrix);
         camera.restore();
@@ -198,5 +201,6 @@ public class FlipBoard extends View{
 
     public void setDegressY(int degressY) {
         this.degressY = degressY;
+        invalidate();
     }
 }
