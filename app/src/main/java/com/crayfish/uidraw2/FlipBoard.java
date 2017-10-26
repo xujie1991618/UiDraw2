@@ -17,6 +17,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.view.MotionEvent;
 import android.view.View;
 
 /**
@@ -98,13 +99,27 @@ public class FlipBoard extends View{
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        animatorSet.start();
+//        animatorSet.start();
     }
 
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         animatorSet.cancel();
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                start();
+                break;
+        }
+        return super.onTouchEvent(event);
+    }
+
+    private void start(){
+        animatorSet.start();
     }
 
     @Override
